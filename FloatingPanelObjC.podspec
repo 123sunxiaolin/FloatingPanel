@@ -10,7 +10,7 @@ The new interface displays the related contents and utilities in parallel as a u
   s.homepage            = "https://github.com/SCENEE/FloatingPanel"
   # s.screenshots       = ""
 
-  s.platform            = :ios, "10.0"
+  s.platform            = :ios, "8.0"
   s.source              = { :git => "https://github.com/SCENEE/FloatingPanel.git", :tag => "v#{s.version}" }
   s.source_files        = "Framework/Sources/*.swift", "Framework/Sources/ObjC/*.{h,m}"
   s.public_header_files = "Framework/Sources/ObjC/*.h"

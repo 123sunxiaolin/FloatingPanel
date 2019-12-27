@@ -103,6 +103,11 @@ public class FloatingPanelController: UIViewController, UIScrollViewDelegate, UI
         super.init(coder: aDecoder)
         setUp()
     }
+    
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setUp()
+    }
 
     /// Initialize a newly created floating panel controller.
     #if __OBJC__
