@@ -404,7 +404,8 @@ class FloatingPanelCore: NSObject, UIGestureRecognizerDelegate {
                     startInteraction(with: translation, at: location)
                     // Workaround: Prevent stopping the surface view b/w anchors if the pan gesture
                     // doesn't pass through .changed state after an interruptible animator is interrupted.
-                    let dy = translation.y - .leastNonzeroMagnitude
+                    let dy = translation.y - CGFloat.leastNormalMagnitude
+
                     layoutAdapter.updateInteractiveTopConstraint(diff: dy,
                                                                  allowsTopBuffer: true,
                                                                  with: behavior)
